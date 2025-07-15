@@ -1,0 +1,92 @@
+/* Background & Shapes */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    overflow: hidden;
+}
+
+.background-shapes .square,
+.background-shapes .circle {
+    position: absolute;
+    background: linear-gradient(135deg, #2196f3, #6ec6ff);
+    opacity: 0.3;
+}
+
+.square {
+    width: 150px;
+    height: 150px;
+    top: 10%;
+    left: 10%;
+    border-radius: 20px;
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    bottom: 15%;
+    right: 15%;
+    border-radius: 50%;
+}
+
+.square.small {
+    width: 80px;
+    height: 80px;
+    top: 70%;
+    left: 20%;
+}
+
+.circle.small {
+    width: 60px;
+    height: 60px;
+    top: 20%;
+    right: 20%;
+}
+
+/* Main Weather App Container */
+.weather-app {
+    position: relative;
+    max-width: 350px;
+    margin: 80px auto;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 30px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Input & Buttons */
+.weather-app input {
+    width: 80%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+}
+
+.weather-app button {
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0;
+    background: #2196f3;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.weather-app button:hover {
+    background: #1769aa;
+}
+
+/* Result Display */
+#weatherResult {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
